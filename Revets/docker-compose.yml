@@ -1,0 +1,17 @@
+
+services:
+  flask_app:
+    build:
+      context: .  # Build the Flask app using the current directory
+    ports:
+      - "5000:5000"  # Expose Flask app on port 5000
+    volumes:
+      - .:/app  # Mount the current directory to the container's /app directory
+      - ./sales.db:/data/sales.db  # Mount the SQLite DB file to the container
+    environment:
+      - FLASK_ENV=development  # Run Flask in development mode
+
+
+volumes:
+  sqlite-data:
+    external: false  
