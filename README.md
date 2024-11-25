@@ -16,8 +16,8 @@ This project includes:
    ```bash
    docker-compose up 
 
-3. **Testing**
-   use "http://localhost:5000/recommend"
+3. **Testing: **
+   Use "http://localhost:5000/recommend"
    in postman or the browser
 
 4. **Turn it off**
